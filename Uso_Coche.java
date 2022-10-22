@@ -5,7 +5,7 @@ public class Uso_Coche {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Coche Renault=new Coche(); //instanciar una clase -es crear un objeto
+		Coche micoche=new Coche(); //instanciar una clase -es crear un objeto
 		//en este caso Renault es una instancia de la clase coche
 		
 		
@@ -24,13 +24,14 @@ public class Uso_Coche {
 		
 		//llamo al metodo setter
 		
-		System.out.println(Renault.dame_datos_generales());	
+		System.out.println(micoche.dame_datos_generales());	
 		
 		
-		Renault.establece_color("amarillo");
-		System.out.println(Renault.color_coche());
+		micoche.establece_color("amarillo");
+		System.out.println(micoche.color_coche());
 		
-		
+		micoche.configura_asientos("si");
+		System.out.println(micoche.dime_asientos());
 		
 
 
