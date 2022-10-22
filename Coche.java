@@ -61,5 +61,14 @@ public class Coche {
 			this.asientos_cuero=false;
 		}
 	}
+	
+	public String dime_aientos(asientos_cuero) {//GETTER
+		if(asientos_cuero==true) {
+			return "los asientos son de cuero";
+		}else {
+			return "los asientos son de serie";
+		}
+		
+	}
 }
 
