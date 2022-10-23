@@ -33,6 +33,15 @@ public class Uso_Coche {
 		micoche.configura_asientos("si");
 		System.out.println(micoche.dime_asientos());
 		
+		micoche.configura_climatizador("no");
+		System.out.println(micoche.dime_climatizador());
+		
+		//este metodo no hace falta establecerlo porque es SETTER GETTER
+		System.out.println(micoche.dime_peso_coche());
+		
+		//vamos ahora a imprimir el precio del coche
+		System.out.println("el precio del coche es "+micoche.precio_coche());
+		
 
 
 	}
