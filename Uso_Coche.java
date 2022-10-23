@@ -1,5 +1,5 @@
 package poo;
-
+import javax.swing.*; // lo necesita las ventanas  JOptionPane
 public class Uso_Coche {
 
 	public static void main(String[] args) {
@@ -27,13 +27,13 @@ public class Uso_Coche {
 		System.out.println(micoche.dame_datos_generales());	
 		
 		
-		micoche.establece_color("amarillo");
+		micoche.establece_color(JOptionPane.showInputDialog("introduce color"));
 		System.out.println(micoche.color_coche());
 		
-		micoche.configura_asientos("si");
+		micoche.configura_asientos(JOptionPane.showInputDialog("Quieres asientos de cuero?"));
 		System.out.println(micoche.dime_asientos());
 		
-		micoche.configura_climatizador("no");
+		micoche.configura_climatizador(JOptionPane.showInputDialog("Quieres Climatizador"));
 		System.out.println(micoche.dime_climatizador());
 		
 		//este metodo no hace falta establecerlo porque es SETTER GETTER
