@@ -7,7 +7,7 @@ public class Uso_Empleado {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//creando diferentes instancias de clase y haciendo uso de los metodos
-		
+		/*
 		//aca en la clase principal instanciamos la clase empleado
 		//es decir vamos a crear un nuevo empleado empleado1
 		//debe llevar la misma cantidad de paremetros
@@ -28,7 +28,42 @@ public class Uso_Empleado {
 		 
 		 System.out.println("nombre "+empleado3.dameNombre()+" sueldo "+
 		 empleado3.dameSueldo()+" inicio a trabajar desde "+empleado3.dameFechacontrato());
+		 
+		 */
+		
+		
+		//otra forma es crear un array para almacenar los empleados
+		Empleado misEmpleados[]= new Empleado[3];
+		//da lo mismo crearlo como arriba o como abajo
+		//String miarray[]=new String [3];
+		misEmpleados[0]= new Empleado("pepito perez",85000,1990,12,17);
+		misEmpleados[1]= new Empleado("Barak Obama",130000,2000,10,15);
+		misEmpleados[2]= new Empleado("Maria Pulido",140000,2020,4,5);
+		
+		
+		//vamos a cambiar este for por un for each
+		
+		/*for (int i=0;i<3;i++) {
+			 misEmpleados[i].subeSueldo(5);
+		}*/
+		for(Empleado e: misEmpleados) {
+			e.subeSueldo(5);
+		}
+		
+		//vamos a cambiar este for por otro for each
+		/*for (int i=0;i<3;i++) {
+			System.out.println("nombre: "+misEmpleados[i].dameNombre()+" su salario es: "+
+		misEmpleados[i].dameSueldo()+" Fecha de ingreso: "+misEmpleados[i].dameFechacontrato());
+		}*/
+		// sustituye misEmpleados[i].dameNombre() por e.dameNombre()
+		for(Empleado e: misEmpleados) {
+			System.out.println("nombre: "+e.dameNombre()+" su salario es: "+
+					e.dameSueldo()+" Fecha de ingreso: "+e.dameFechacontrato());
+		}
+		
 	}
+	
+		
 // cuando hacemos todo en un solo fichero java que alberga todas las clases, solo debe existir un metodo public y solo un metodo main
 }
 
