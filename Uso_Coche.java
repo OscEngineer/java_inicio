@@ -1,11 +1,11 @@
 package poo;
-
+import javax.swing.*; // lo necesita las ventanas  JOptionPane
 public class Uso_Coche {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Coche Renault=new Coche(); //instanciar una clase -es crear un objeto
+		Coche micoche=new Coche(); //instanciar una clase -es crear un objeto
 		//en este caso Renault es una instancia de la clase coche
 		
 		
@@ -24,13 +24,23 @@ public class Uso_Coche {
 		
 		//llamo al metodo setter
 		
-		System.out.println(Renault.dame_datos_generales());	
+		System.out.println(micoche.dame_datos_generales());	
 		
 		
-		Renault.establece_color("amarillo");
-		System.out.println(Renault.color_coche());
+		micoche.establece_color(JOptionPane.showInputDialog("introduce color"));
+		System.out.println(micoche.color_coche());
 		
+		micoche.configura_asientos(JOptionPane.showInputDialog("Quieres asientos de cuero?"));
+		System.out.println(micoche.dime_asientos());
 		
+		micoche.configura_climatizador(JOptionPane.showInputDialog("Quieres Climatizador"));
+		System.out.println(micoche.dime_climatizador());
+		
+		//este metodo no hace falta establecerlo porque es SETTER GETTER
+		System.out.println(micoche.dime_peso_coche());
+		
+		//vamos ahora a imprimir el precio del coche
+		System.out.println("el precio del coche es "+micoche.precio_coche());
 		
 
 
