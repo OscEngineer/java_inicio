@@ -12,10 +12,10 @@ public class Prueba_uso_final {
 		
 		//cambiandole la seccion enviando
 		trabajador1.cambiasecccion("RRHH");
-		System.out.println(trabajador1.devuelveDatos());
-		System.out.println(trabajador2.devuelveDatos());
-		System.out.println(trabajador3.devuelveDatos());
-		System.out.println(trabajador4.devuelveDatos());
+			
+		System.out.println(trabajador1 .devuelveDatos()+"\n"+trabajador2.devuelveDatos()
+		+"\n"+trabajador3 .devuelveDatos()+"\n"+trabajador4.devuelveDatos());
+		System.out.println(Empleados.dameIdSiguiente());
 
 	}
 
@@ -46,6 +46,10 @@ class Empleados{
 		
 		return "el nombre es: "+nombre+" y la seccion es: "+seccion
 				+" y el Id es: "+Id;
+	}
+	
+	public static String dameIdSiguiente() {
+		return "El IdSiguiente es: "+IdSiguiente;
 	}
 	
 	//USANDO PALABRA RESERVADA final QUE NO PERMITE CAMBIAR EL VALOR PORQUE SE HA CONVERTIDO EN UNA CONSTANTE
