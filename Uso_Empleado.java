@@ -33,13 +33,13 @@ public class Uso_Empleado {
 		
 		
 		//otra forma es crear un array para almacenar los empleados
-		Empleado misEmpleados[]= new Empleado[3];
+		Empleado misEmpleados[]= new Empleado[4];
 		//da lo mismo crearlo como arriba o como abajo
 		//String miarray[]=new String [3];
 		misEmpleados[0]= new Empleado("pepito perez",85000,1990,12,17);
 		misEmpleados[1]= new Empleado("Barak Obama",130000,2000,10,15);
 		misEmpleados[2]= new Empleado("Maria Pulido",140000,2020,4,5);
-		
+		misEmpleados[3]= new Empleado("oscar elmejor");
 		
 		//vamos a cambiar este for por un for each
 		
@@ -68,6 +68,7 @@ public class Uso_Empleado {
 }
 
 class Empleado{
+	//creando constructor
 	public Empleado(String nom , double sue,int anho,int mes, int dia) {
 		nombre=nom;
 		sueldo=sue;
@@ -76,6 +77,10 @@ class Empleado{
 		//contruyendo el objeto grego.. el objetivo es construir una fecha
 		GregorianCalendar calendario = new GregorianCalendar(anho,mes-1,dia);
 		altacontrato=calendario.getTime();
+	}
+	//creando otro metodo constructor 
+	public Empleado(String nom) {
+		this(nom,30000,2020,01,15);
 	}
 	
 	public String dameNombre() {//GETTER
