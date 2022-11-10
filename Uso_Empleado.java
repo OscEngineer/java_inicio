@@ -80,6 +80,8 @@ class Empleado{
 	}
 	//creando otro metodo constructor 
 	public Empleado(String nom) {
+		//cuando usamos el this en un constructor, este llamara al constructor que
+		//coincida con el numero de parametros que estamos usando
 		this(nom,30000,2020,01,15);
 	}
 	
