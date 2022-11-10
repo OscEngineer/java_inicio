@@ -1,10 +1,12 @@
 package poo;
 import javax.swing.*; // lo necesita las ventanas  JOptionPane
-public class Uso_Coche {
+public class Uso_Vehiculo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		
+		/*
 		Coche micoche=new Coche(); //instanciar una clase -es crear un objeto
 		//en este caso Renault es una instancia de la clase coche
 		
@@ -41,7 +43,7 @@ public class Uso_Coche {
 		
 		//vamos ahora a imprimir el precio del coche
 		System.out.println("el precio del coche es "+micoche.precio_coche());
-		
+		*/
 
 
 	}

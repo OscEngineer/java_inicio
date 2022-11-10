@@ -13,7 +13,7 @@ public class Coche {
 	
 	//METODO CONSTRUCTOR se encarga de darle un estado inicial a mi Objeto
 	//debe tener el mismo nombre de la clase
-	public Coche() {
+	public Coche() {//CONSTRUCTOR
 		
 		ruedas=4;
 		largo=2000;
@@ -89,10 +89,10 @@ public class Coche {
 			
 		}
 	}
-	//aca tenemos un metodo SEETER Y GETTER, lo cual es desaconsejado
+	//aca tenemos un metodo SETTER Y GETTER, lo cual es desaconsejado
 	//tiene los dos puesto que estamos estableciendo el valor de ua variable
 	//y le estamos diciendo que devuelva un dato
-	public String dime_peso_coche() {
+	public String dime_peso_coche() {//GETTER SETTER
 		int peso_carroceria=500;
 		peso_total=peso_plataforma+peso_carroceria;
 		
